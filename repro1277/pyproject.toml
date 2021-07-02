@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Repro1277"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/repro1277"
+license = "BSD license"
+author = 'Jane Developer'
+author_email = "jane@example.com"
+
+[tool.briefcase.app.repro1277]
+formal_name = "Repro1277"
+description = "My first application"
+icon = "src/repro1277/resources/repro1277"
+sources = ['src/repro1277']
+requires = []
+
+
+[tool.briefcase.app.repro1277.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.repro1277.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.repro1277.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.repro1277.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.repro1277.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
