@@ -39,8 +39,8 @@ class Repro1277(toga.App):
         self.main_window.show()
 
     def timer_change(self, widget):
-        self.timer_label.text = "Counter: " + str(self.timer_slide.tick_value)
-        self.value_label.text = "Value: " + str(self.timer_slide.value)
+        self.timer_label.text = "Tick: " + str(self.timer_slide.tick_value)
+        self.value_label.text = "Val: " + str(self.timer_slide.value)
 
     def timer_set(self, widget):
         pass
